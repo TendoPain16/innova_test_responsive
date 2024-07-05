@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&amp;display=swap" rel="stylesheet" />
+    
+    <title>@TempData["title"]</title>
+
+</head>
+<body>
+
+        <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="start">
+                <div class="logo">
+                    <img src="imgs/logo.png" alt="Logo">
+                </div>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+
+
+
+            <div class="last">
+
+                <div class="log">
+                    <a asp-page="/user_pages/JoinPage">Join Now</a>
+                    <a asp-page="/user_pages/Signup">Demo</a>
+                </div>
+
+
+                <div class="menu-button menu-click">
+                    <i class="fa-solid fa-bars menu-clickk"></i>
+                    <div class="wrapper">
+                        <div class="content">
+                            <ul class="menu">
+                                <li class="item">
+                                    <i class="fa-solid fa-house"></i>
+                                    <span>Home</span>
+                                </li>
+                                <li class="item">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    <span>About</span>
+                                </li>
+                                <li class="item">
+                                    <i class="fa-solid fa-bell-concierge"></i>
+                                    <span>Services</span>
+                                </li>
+                                <li class="item">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>Contact</span>
+                                </li>
+                                <li class="item share">
+                                    <div>
+                                        <i class="fa-solid fa-globe"></i>
+                                        <span>En</span>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                    <ul class="share-menu">
+                                        <li class="item">
+                                            <span>Ar</span>
+                                            <img src="imgs/Flag_of_Egypt.svg.png" alt="Placeholder Image">
+                                            <span>Arabic</span>
+                                        </li>
+                                        <li class="item">
+                                            <span>En</span>
+                                            <img src="imgs/Flag_of_Us.svg.webp" alt="Placeholder Image">
+                                            <span>English</span>
+                                        </li>
+                                        <li class="item">
+                                            <span>Fr</span>
+                                            <img src="imgs/Flag_of_France.svg.webp" alt="Placeholder Image">
+                                            <span>France</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span></span>
+
+                <div class="language-button">
+                    <i class="fa-solid fa-globe"></i>
+                    <button>Eng</button>
+
+
+                    <ul class="language-menu">
+                        <li>
+                            <a href="#">
+                                <span>AR</span>
+                                <img src="imgs/Flag_of_Egypt.svg.png" alt="Placeholder Image">
+                                <span>Arabic</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>EN</span>
+                                <img src="imgs/Flag_of_Us.svg.webp" alt="Placeholder Image">
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>FR</span>
+                                <img src="imgs/Flag_of_France.svg.webp" alt="Placeholder Image">
+                                <span>French</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <div class="landing-section" id="landing-section">
+        <div class="container">
+            <div class="landing-content">
+                <p>Unlocking the</p>
+                <p class="yellow">Money masters</p>
+                <p>for tomorrow!</p>
+                <a href="#">Join Now</a>
+            </div>
+            <div class="landing-image">
+                <div class="image">
+                    <img src="imgs/girl.png" alt="Landing Image">
+                </div>
+            </div>
+        </div>
+
+        <a href="#navbar"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+
+    <script src="css/j.js"></script>
+</body>
+</html>
