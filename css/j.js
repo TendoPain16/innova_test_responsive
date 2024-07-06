@@ -19,3 +19,50 @@ document.addEventListener("click", e => {
         contextMenu.style.display = "none";
     }
 });
+
+
+function enableDisableVideos() {
+    var videos = document.querySelectorAll('.swiper-slide video');
+    videos.forEach(function (video) {
+        var parentElement = video.parentNode;
+        if (parentElement.classList.contains('swiper-slide-active')) {
+            video.controls = true;
+        } else {
+            video.controls = false;
+            video.pause();
+        }
+    });
+}
+
+
+
+var swiper = new Swiper('.swiper', {
+    slidesPerView:1.5,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+    },
+    breakpoints: {
+        // when window width is >= 1024px
+        992: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+    },
+});
+
+swiper.on('slideChangeTransitionEnd', function () {
+    enableDisableVideos();
+});
